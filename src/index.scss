@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Satisfy&display=swap');
+
+$image : 'https://i.imgur.com/uow5IDn.jpg';
+$image2 : 'https://i.imgur.com/718Un17.jpg';
+
+
+#root{
+	height: 200vh;
+}
+
+body{
+	height: 100%;
+	justify-content: center;
+	align-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.haha{
+	height: 50%;
+}
+
+.Container{
+	height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background-size: cover;
+	background-image: url($image);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+	.Login{	
+		font-family: 'Kaushan Script', cursive;	
+		margin: 0px auto;
+		display: block;
+	  height: 70%;
+	  width: 35%;
+		box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
+		background: white;
+
+		.Heading{
+			display: flex;
+			position: absolute;
+			font-size: 3em;
+			width: 35%;
+			justify-content: center;
+			letter-spacing: 0.5em;
+			margin: 3.45em 0;
+			color: white;
+			z-index: 2;
+		}
+
+
+		.Background{
+			position: absolute;
+			top: 15%;
+			margin: 3.5em 0;
+			font-size: 3em;
+			width: 35%;
+			display: flex;
+			justify-content: center;
+			background: rgb(255,216,150);
+			background: linear-gradient(90deg, rgba(255,216,150,1) 0%, rgba(255,134,220,1) 100%);
+			z-index: 1;
+			color: transparent;
+		}
+
+		>button{
+			color: white;
+			font-size: 1.5em;
+			font-family: 'Kaushan Script', cursive;	
+			display: flex;
+			position: relative;
+			justify-content: center;
+			background: rgb(255,216,150);
+			background: linear-gradient(90deg, rgba(255,216,150,1) 0%, rgba(255,134,220,1) 100%);
+			padding: 0.6em 1.4em;
+			margin: 0 auto;	
+			border: 1px solid white;
+			border-radius:  2em;
+			outline: none;
+			top: 80%;
+		
+			&:active{
+				letter-spacing: 0.4em;
+			}
+		}
+	}
+}
+
+.Container2{
+	height: 100%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	background-size: cover;
+	background-image: url($image2);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+
+	.back{
+		color: white;
+		font-size: 3em;
+	}
+}

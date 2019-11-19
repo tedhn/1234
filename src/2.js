@@ -10,12 +10,9 @@ export default function B(prop){
 
 	return(
 		<div className='Container2'>
-			<div className='back' onClick={goBack}><i className="fa fa-arrow-left"></i></div>
+			<div className='title'>About Me</div>
 
-			<div className='box1'>
-				<div>Dumb text</div>
-			</div>
-
+			<div className='Content'>Just a dumb 20 year old doing dumber things with his life :D</div>
 		</div>
 	)
 }

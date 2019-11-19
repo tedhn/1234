@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Caveat|Kaushan+Script|McLaren|Satisfy&display=swap');
 
 $image : 'https://i.imgur.com/uow5IDn.jpg';
 $image2 : 'https://i.imgur.com/718Un17.jpg';
+$image3 : 'https://i.imgur.com/49FLj94.jpg';
+$image4 : 'https://i.imgur.com/p9jtves.jpg';
 
 
 #root{
-	height: 200vh;
+	height: 100vh;
 }
 
 body{
@@ -14,12 +16,28 @@ body{
 	align-content: center;
 	margin: 0;
 	padding: 0;	
-	font-family: 'Kaushan Script', cursive;	
+	font-family: 'Baloo', cursive;
 	overflow: hidden;
 }
 
 .haha{
-	height: 50%;
+	height: 100%;
+
+	>button{
+		color: white;
+		background: transparent;
+		font-size: 3em;
+		font-family: 'Baloo', cursive;
+		display: flex;
+		position: fixed;
+		padding: 0.2em 1.4em;
+		margin: 0 auto;	
+		border: none;
+		outline: none;
+		left: 45%;
+		bottom: 0;
+		cursor: pointer;
+	}
 }
 
 .scrollBar{
@@ -30,111 +48,114 @@ body{
 	list-style-type: none;
 	margin: auto 0;
 	padding: 0;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 .Container{
 	height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 	background-size: cover;
 	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url($image);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	transition: 1.5s ease;
 
-	.Login{	
-
-		margin: 0px auto;
-		display: block;
+	.Login{
+		margin-top: 10%;	
 	  height: 70%;
-	  width: 35%;
-		box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
-		background: white;
+	  width: 100%;
 
 		.Heading{
 			display: flex;
 			position: absolute;
-			font-size: 3em;
+			font-size: 4em;
 			width: 35%;
 			justify-content: center;
 			letter-spacing: 0.5em;
-			margin: 3.45em 0;
+			margin: 1em 0 2.45em 0;
 			color: white;
-			z-index: 2;
 		}
 
-
-		.Background{
-			position: absolute;
-			top: 15%;
-			margin: 3.5em 0;
-			font-size: 3em;
-			width: 35%;
-			display: flex;
-			justify-content: center;
-			background: rgb(255,216,150);
-			background: linear-gradient(90deg, rgba(255,216,150,1) 0%, rgba(255,134,220,1) 100%);
-			z-index: 1;
-			color: transparent;
-		}
-
-		>button{
-			color: white;
-			font-size: 1.5em;
-			font-family: 'Kaushan Script', cursive;	
+		.Content{
 			display: flex;
 			position: relative;
-			justify-content: center;
-			background: rgb(255,216,150);
-			background: linear-gradient(90deg, rgba(255,216,150,1) 0%, rgba(255,134,220,1) 100%);
-			padding: 0.6em 1.4em;
-			margin: 0 auto;	
-			border: 1px solid white;
-			border-radius:  2em;
-			outline: none;
-			top: 80%;
-		
-			&:active{
-				letter-spacing: 0.4em;
-			}
+			font-size: 2em;
+			top: 40%;	
+			left: 10%;
+			width: 80%;
+			color: white;;
+
 		}
 	}
 }
 
 .Container2{
 	height: 100%;
-	display: flex;
+  display: flex;
 	background-size: cover;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),url($image2);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url($image2);
 	background-repeat: no-repeat;
 	background-position: center;
-	
+	background-attachment: fixed;
 
-	.back{
-		color: white;
-		font-size: 2em;
+	.Content{
 		position: relative;
-		top: 7px;
-		left: 7px;
-		opacity: 0.4;
-	}
-
-	.box1{
-		position: relative;
-		top:30%;
-		height: 350px;
-		width: 900px;
-		background-color: white;
-		box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.42);
-		justify-content: center;
 		display: flex;
-		font-size: 3em;
+		font-size: 2em;
+		color: white;
+		top: 30%;
+		left : 10%;
+		letter-spacing: 0.05em;
+		height: 300px;
+	}
+}
 
-		>div{
-			display: flex;
-			margin: auto 0;
+.Container3{
+	height: 100%;
+	display: flex;
+	background-size: cover;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url($image3);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.Container4{
+	height: 100%;
+  display: flex;
+	background-size: cover;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url($image4);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.title{
+	position: absolute;
+	color: white;
+	font-size: 2.5em;
+	margin: 7%;
+}
+
+.navBar{
+	position: fixed;
+	top: 0px;
+	color: white;
+	width:100%;
+	font-family: 'Baloo', cursive;
+
+	>ul{
+		list-style-type: none;
+		font-size: 1.5em;
+		float:right;
+		margin: 20px;
+
+		>li{
+			display: inline;
+			margin: 0 30px;
+			cursor: pointer;
 		}
 	}
 }
+

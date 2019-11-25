@@ -5,6 +5,10 @@ $image2 : 'https://i.imgur.com/718Un17.jpg';
 $image3 : 'https://i.imgur.com/49FLj94.jpg';
 $image4 : 'https://i.imgur.com/p9jtves.jpg';
 
+@keyframes asdf {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 #root{
 	height: 100vh;
@@ -38,6 +42,58 @@ body{
 		bottom: 0;
 		cursor: pointer;
 	}
+
+	.contact{
+		position: absolute;
+		z-index: 100;
+		height: 50%;
+		width: 50%;
+		top: 25%;
+		left: 25%;
+		background: white;
+		opacity: 1;
+		border-radius: 40px;
+		box-shadow:0 0 0 1600px rgba(0,0,0,0.6);
+		transition: opacity 1s;		
+
+		&.hidden{
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		>i{
+			position: absolute;
+			cursor: pointer;
+			right: 4%;
+			top: 4%;
+			opacity: 0.7;
+			font-size: 1.5em;
+		}
+
+		>div{
+
+			position: relative;
+			left: 25%;
+			top: 25%;
+			margin: 20px;
+			cursor: pointer;
+
+			>i{
+				font-size: 2.5em;
+			}
+
+			>a{
+				font-size: 1.7em;
+				text-decoration: none;
+				color: black;
+				padding: 15px;
+			}
+
+			&:hover{
+				opacity: 0.4;
+			}
+		}
+	}
 }
 
 .scrollBar{
@@ -55,37 +111,34 @@ body{
 	height: 100%;
   display: flex;
 	background-size: cover;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url($image);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url($image);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	transition: 1.5s ease;
 
-	.Login{
+	.a{
 		margin-top: 10%;	
 	  height: 70%;
 	  width: 100%;
 
 		.Heading{
 			display: flex;
-			position: absolute;
-			font-size: 4em;
-			width: 35%;
-			justify-content: center;
-			letter-spacing: 0.5em;
-			margin: 1em 0 2.45em 0;
+			position: relative;
+			font-size: 3em;
+			width: 90%;
+			left: 10%;
+			margin: 1em 0;
 			color: white;
 		}
 
 		.Content{
 			display: flex;
 			position: relative;
-			font-size: 2em;
-			top: 40%;	
+			font-size: 2em;	
 			left: 10%;
 			width: 80%;
-			color: white;;
-
+			color: white;
 		}
 	}
 }
@@ -93,6 +146,7 @@ body{
 .Container2{
 	height: 100%;
   display: flex;
+	position: relative;
 	background-size: cover;
 	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url($image2);
 	background-repeat: no-repeat;
@@ -109,26 +163,6 @@ body{
 		letter-spacing: 0.05em;
 		height: 300px;
 	}
-}
-
-.Container3{
-	height: 100%;
-	display: flex;
-	background-size: cover;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url($image3);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-.Container4{
-	height: 100%;
-  display: flex;
-	background-size: cover;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url($image4);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 }
 
 .title{
@@ -158,4 +192,3 @@ body{
 		}
 	}
 }
-

@@ -1,6 +1,7 @@
 import React , {useState , useEffect} from 'react'
 import ReactDOM from 'react-dom';
 import './index.scss';
+import 'animate.css';
 
 import jump from 'jump.js'
 
@@ -11,9 +12,19 @@ function Asdf(){
 
 	const [count ,setCount] = useState(0);
 	const [current , setCurrent] = useState(0);
+	const [show , setShow ] = useState(false);
 
 	const goNext = () =>{	
 		setCount((count + 1) % 2)
+	}
+
+	const toggleContact = () =>{
+		if(show){
+			setShow(false)
+		}
+		else{
+			setShow(true)
+		}
 	}
 
 	useEffect( ()=>{
@@ -32,9 +43,16 @@ function Asdf(){
 
 			<div className='navBar'>
 				<ul>
-					<li>Projects</li>
-					<li>Contact</li>
+					<li onClick={toggleContact}>Contact</li>
 				</ul>
+			</div>
+
+			<div className={show ? 'contact' : 'contact hidden'}>
+				<i className='fa fa-close' onClick={toggleContact}></i>
+				
+				<div><i className='fab fa-facebook'></i> <a href=''>Heinhtet Naing</a></div>
+				<div><i className='fab fa-github'></i> <a href='https://github.com/tedhn'>tedhn</a></div>
+				<div><i className='fab fa-discord'></i> <a>C George#2548</a></div>
 			</div>
 
 			<A/>

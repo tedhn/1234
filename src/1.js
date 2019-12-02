@@ -40,11 +40,9 @@ export default function A(){
 						<div className='Content'>Feel free to report bugs to me @ discord</div>
 					</div>
 					<div className={animated ? '' : 'wow 	fadeInUp'} data-wow-duration="1s" data-wow-delay="2s">
-						<div className='Content'>Not working for mobile... yet</div>
+						<div className='Content'>Working for mobile now B)</div>
 					</div>
-					<div className={animated ? '' : 'wow 	fadeInUp'} data-wow-duration="1s" data-wow-delay="3s">
-						<div className='Content'>JK working for mobiles now B)</div>
-					</div>
+
 				</div>
 		</div>
 	)

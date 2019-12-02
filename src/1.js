@@ -25,7 +25,7 @@ export default function A(){
 				<div className='a'>
 					<Typed 
 						className='Heading'
-						strings={['Hello :D' , 'My name is Ted' , 'This is something simple i made']}
+						strings={['Hello :D' , 'My name is Ted' , 'AHHHHHHHHHHHHHHHHHHHH']}
 						loop={true}
 						backDelay={2000}
 						startDelay={2000}

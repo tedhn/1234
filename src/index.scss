@@ -5,11 +5,6 @@ $image2 : 'https://i.imgur.com/718Un17.jpg';
 $image3 : 'https://i.imgur.com/49FLj94.jpg';
 $image4 : 'https://i.imgur.com/p9jtves.jpg';
 
-@keyframes asdf {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 #root{
 	height: 100vh;
 }
@@ -102,7 +97,6 @@ body{
 	top:50%;
 	right: 2%;
 	list-style-type: none;
-	margin: auto 0;
 	padding: 0;
 	opacity: 0.7;
 }
@@ -120,7 +114,7 @@ body{
 	.a{
 		margin-top: 10%;	
 	  height: 70%;
-	  width: 100%;
+	  width: 90%;
 
 		.Heading{
 			display: flex;
@@ -191,4 +185,88 @@ body{
 			cursor: pointer;
 		}
 	}
+}
+
+@media only screen and (max-width: 450px){
+
+	#root{
+		width: 100vw;
+		height: 100vh;	
+	}
+
+	body{
+		width:100%;
+		height:100%;
+	}
+
+	.Container{
+		width: 100%;
+		.a{
+			margin-top: 35%;
+
+			.Heading{
+				font-size:1.5em;
+				margin-bottom: 15%;
+			
+			}
+
+			.Content{
+				font-size: 1.6em;
+				margin-top:2.5%;
+			}
+		}
+	}
+
+	.Container2{
+		.Content{
+			width: 80%;
+			margin: auto 0;
+			font-size: 1.6em;
+			top: 25%;
+		}
+		.title{
+			font-size: 1.9em;
+		}
+	}
+
+	.haha{
+		>button{
+			left:35%;
+			padding-bottom: 0;
+		}
+
+		.navBar{
+			>ul{
+				>li{
+					margin: 0;
+				}
+			}
+		}
+
+		.contact{
+			left: 15%;
+			width: 70%;
+			height: 60%;
+			border-radius: 5%;
+
+			>div{
+				width: 70%;
+				left: 10%;
+
+				>a{
+					font-size: 1.3em;
+				}
+
+				>i{
+					font-size: 1.8em;
+				}
+			}
+		}
+
+	}
+
+	.scrollBar{
+		visibility: hidden;
+	}
+
 }

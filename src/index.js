@@ -58,11 +58,6 @@ function Asdf(){
 			<A/>
 			<B/>
 
-			<ul className='scrollBar'>
-				<li><i className= {current === 0 ? 'fa fa-circle' : 'fa fa-circle-o' }></i></li>
-				<li><i className= {current === 1 ? 'fa fa-circle' : 'fa fa-circle-o' }></i></li>
-			</ul>
-
 			<button onClick={goNext}><i className={count === 1 ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i></button>	
 		</div>
 	)

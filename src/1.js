@@ -9,7 +9,7 @@ export default function A(){
 
 	useEffect( ()=>{
 		const wow = new WOW({
-			resetAnimation: false,
+			live:false,
 			callback: changeAnimated,
 		});
 		wow.init();
@@ -25,9 +25,10 @@ export default function A(){
 				<div className='a'>
 					<Typed 
 						className='Heading'
-						onComplete={typed => setTimeout( ()=>{ return typed.reset(true)},3000 )}
 						strings={['Hello :D' , 'My name is Ted' , 'This is something simple i made']}
+						loop={true}
 						backDelay={2000}
+						startDelay={2000}
 						typeSpeed={30}
 						backSpeed={50}
 					/>
